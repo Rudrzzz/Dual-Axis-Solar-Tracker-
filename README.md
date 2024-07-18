@@ -1,17 +1,16 @@
 # Dual-Axis-Solar-Tracker-
 Project upon dual axis solar tracker which could rotate horizontally and vertically.
-//Commenting out all the vertical movements testing of horizontal servo with LDR
+
 
 #include  <Servo.h>
-
-//  180 horizontal max
-Servo horizontal;       //Horizontal servo
+//180 horizontal max
+Servo horizontal;  //Horizontal servo
 int servoh = 50;
 
-//Servo vertical;             //vertical servo
-//int servov =50;
+Servo vertical;   //vertical servo
+int servov =50;
 
-int servovLimitHigh=125;      //Vertical limits
+int servovLimitHigh=125;   //Vertical limits
 int servovLimitLow=0;
 
 //LDR connections
