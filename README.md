@@ -56,23 +56,21 @@ void loop() {
       servoh  = servoh-1;
       horizontal.write(servoh);
       }  
-      //if(C>D && C-D>100)
-      //{
-        //servov=servov-1;
-        //if(servov < servovLimitLow)
-        //{
-        //  servov  = servovLimitLow;
-       // }
-        //vertical.write(servov);
-      
-      //} else if (D>C  && D-C>150)
-      //{
-        //servov=servov+1;
-        //if(servov > servovLimitHigh){
-          //servov  = servovLimitHigh;
+      if(C>D && C-D>100)
+      {
+        servov=servov-1;
+        if(servov < servovLimitLow)
+        {
+          servov  = servovLimitLow;
         }
-        //vertical.write(servov);
-      //}
+        vertical.write(servov);
+  } else if (D>C  && D-C>150)
+  {servov=servov+1;
+        if(servov > servovLimitHigh){
+          servov  = servovLimitHigh;
+        }
+        vertical.write(servov);
+      }
     
     
     delay(100);
