@@ -2,7 +2,7 @@
 Project upon dual axis solar tracker which could rotate horizontally and vertically.
 
 
-#include  <Servo.h>
+  #include  <Servo.h>
 //180 horizontal max
 Servo horizontal;  //Horizontal servo
 int servoh = 50;
